@@ -52,10 +52,17 @@ To start you off, here's an example of what the resources in your API should loo
 { "id": 1, "userId": 3, "task": "Take out garbage" }
 ```
 
+### Images
+
+```json
+{ "id": 1, "userId": 3, "url": "www.taco.com", "caption": "OMG look at that taco" }
+```
+
 ## Professional Requirements
 
 1. All teammates must use React and JSON-server. 
 1. Each module should have a comment at the top with the following info: author(s) and purpose of module
+1. Each project should utilize a CSS Library of your choosing.
 1. The README for your project should include instructions on how another person can download and run the application
 1. An ERD showing the database relationships. A screenshot/image should be included on your README.
 
