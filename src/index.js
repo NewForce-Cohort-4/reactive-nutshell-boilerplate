@@ -1,11 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { BrowserRouter as Router } from "react-router-dom"
-import Nutshell from './components/Nutshell'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import Nutshell from './Nutshell';
+import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <Router>
-      <Nutshell />
-  </Router>
-  , document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Nutshell />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your Nutshell, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
